@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fAI-po-fQX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyI-mt-BMb">
+                                <rect key="frame" x="236.5" y="289" width="127" height="30"/>
+                                <state key="normal" title="Blue Square Arena"/>
+                                <connections>
+                                    <action selector="ToBlueArena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9E7-dc-DvI"/>
+                                    <segue destination="fdv-Nj-uCB" kind="presentation" identifier="BlueArena" id="obI-O1-m5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTc-DE-Wo4">
+                                <rect key="frame" x="224" y="364" width="153" height="30"/>
+                                <state key="normal" title="Random Square Arena"/>
+                                <connections>
+                                    <action selector="ToRandomArena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HjJ-go-O6U"/>
+                                    <segue destination="P4e-Cc-VNd" kind="show" identifier="RandomArena" id="DK2-BK-B8T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-qm-vCa">
+                                <rect key="frame" x="238" y="214" width="124" height="30"/>
+                                <state key="normal" title="Red Square Arena"/>
+                                <connections>
+                                    <action selector="ToRedArena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qyz-OI-Dhu"/>
+                                    <segue destination="PaT-bp-OZ7" kind="show" identifier="RedArena" id="FnH-UU-DNV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Tk-ri-DEv">
+                                <rect key="frame" x="251" y="439" width="99" height="30"/>
+                                <state key="normal" title="Triangle Arena"/>
+                                <connections>
+                                    <segue destination="ih2-fX-Vja" kind="show" identifier="TriangleArena" id="xaw-Gr-1IO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QUh-qm-vCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ihb-QN-fEs"/>
+                            <constraint firstItem="2Tk-ri-DEv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGG-4f-4IZ"/>
+                            <constraint firstItem="qyI-mt-BMb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rpd-SJ-70U"/>
+                            <constraint firstItem="2Tk-ri-DEv" firstAttribute="top" secondItem="ZTc-DE-Wo4" secondAttribute="bottom" constant="45" id="Utv-0R-7hE"/>
+                            <constraint firstItem="qyI-mt-BMb" firstAttribute="top" secondItem="QUh-qm-vCa" secondAttribute="bottom" constant="45" id="WZ7-Ec-YpH"/>
+                            <constraint firstItem="QUh-qm-vCa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="Z7u-TM-2IH"/>
+                            <constraint firstItem="ZTc-DE-Wo4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="foz-YX-DkF"/>
+                            <constraint firstItem="ZTc-DE-Wo4" firstAttribute="top" secondItem="qyI-mt-BMb" secondAttribute="bottom" constant="45" id="r0G-Xe-hBi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0en-CR-ZDi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="311"/>
+        </scene>
+        <!--Triangle View Controller-->
+        <scene sceneID="xHo-Hd-JOJ">
+            <objects>
+                <viewController id="ih2-fX-Vja" customClass="TriangleViewController" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SQ6-Rx-kdB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ne2-NX-Nns"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RiC-2p-69m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkr-3i-roE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="1147"/>
+        </scene>
+        <!--Shape View Controller-->
+        <scene sceneID="OZW-wW-Hbl">
+            <objects>
+                <viewController id="PaT-bp-OZ7" customClass="ShapeViewController" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YUg-EK-qNW"/>
+                        <viewControllerLayoutGuide type="bottom" id="VYg-Dq-JVD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eFZ-WS-WKm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="11T-hm-Ko4">
+                                <rect key="frame" x="123" y="94" width="354" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="LEl-qf-ccR"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FF-8D-LT2">
+                                <rect key="frame" x="263" y="134" width="74" height="30"/>
+                                <state key="normal" title="Show/Hide"/>
+                                <connections>
+                                    <action selector="ShowHide:" destination="PaT-bp-OZ7" eventType="touchUpInside" id="NoP-Bt-tDz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJq-gQ-vWM">
+                                <rect key="frame" x="281" y="174" width="39" height="30"/>
+                                <state key="normal" title="Erase"/>
+                                <connections>
+                                    <action selector="Erase:" destination="fdv-Nj-uCB" eventType="touchUpInside" id="Kv2-nM-daa"/>
+                                    <action selector="Erase:" destination="PaT-bp-OZ7" eventType="touchUpInside" id="rKF-pC-2hF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HJq-gQ-vWM" firstAttribute="centerX" secondItem="eFZ-WS-WKm" secondAttribute="centerX" id="4o1-gk-0WK"/>
+                            <constraint firstItem="11T-hm-Ko4" firstAttribute="centerX" secondItem="eFZ-WS-WKm" secondAttribute="centerX" id="7Qo-zY-yhz"/>
+                            <constraint firstItem="6FF-8D-LT2" firstAttribute="centerX" secondItem="eFZ-WS-WKm" secondAttribute="centerX" id="baE-40-kTn"/>
+                            <constraint firstItem="6FF-8D-LT2" firstAttribute="top" secondItem="11T-hm-Ko4" secondAttribute="bottom" constant="10" id="ggm-HH-u6C"/>
+                            <constraint firstItem="11T-hm-Ko4" firstAttribute="top" secondItem="YUg-EK-qNW" secondAttribute="bottom" constant="30" id="qRI-TF-pxw"/>
+                            <constraint firstItem="HJq-gQ-vWM" firstAttribute="top" secondItem="6FF-8D-LT2" secondAttribute="bottom" constant="10" id="qXX-os-y0d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RevealButton" destination="HJq-gQ-vWM" id="LuD-pf-eTx"/>
+                        <outlet property="ShapeSize" destination="11T-hm-Ko4" id="Mi3-Nb-JQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99o-vR-baI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="-13"/>
+        </scene>
+        <!--Shape View Controller-->
+        <scene sceneID="UWP-ZX-vkt">
+            <objects>
+                <viewController id="fdv-Nj-uCB" customClass="ShapeViewController" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C6S-sS-DPC"/>
+                        <viewControllerLayoutGuide type="bottom" id="xiG-mS-qyv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zED-ty-yW9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn3-rG-u4v">
+                                <rect key="frame" x="248" y="50" width="104" height="30"/>
+                                <state key="normal" title="Exit Blue Arena"/>
+                                <connections>
+                                    <segue destination="XWZ-Ym-7Ny" kind="unwind" unwindAction="unwindToMainView:" id="6lx-kZ-O4W"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Kvx-cS-ZJa">
+                                <rect key="frame" x="123" y="90" width="354" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Dcl-ZB-KoV"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxV-ac-Uhl">
+                                <rect key="frame" x="263" y="130" width="74" height="30"/>
+                                <state key="normal" title="Show/Hide"/>
+                                <connections>
+                                    <action selector="ShowHide:" destination="fdv-Nj-uCB" eventType="touchUpInside" id="MzN-d7-oTO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDJ-29-UxF">
+                                <rect key="frame" x="281" y="170" width="39" height="30"/>
+                                <state key="normal" title="Erase"/>
+                                <connections>
+                                    <action selector="Erase:" destination="fdv-Nj-uCB" eventType="touchUpInside" id="SKQ-va-xci"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wn3-rG-u4v" firstAttribute="centerX" secondItem="zED-ty-yW9" secondAttribute="centerX" id="3bF-fn-Wl7"/>
+                            <constraint firstItem="Kvx-cS-ZJa" firstAttribute="top" secondItem="wn3-rG-u4v" secondAttribute="bottom" constant="10" id="KsO-0S-WIS"/>
+                            <constraint firstItem="WDJ-29-UxF" firstAttribute="centerX" secondItem="zED-ty-yW9" secondAttribute="centerX" id="MQi-li-y8b"/>
+                            <constraint firstItem="ZxV-ac-Uhl" firstAttribute="centerX" secondItem="zED-ty-yW9" secondAttribute="centerX" id="PAa-nB-1va"/>
+                            <constraint firstItem="wn3-rG-u4v" firstAttribute="top" secondItem="C6S-sS-DPC" secondAttribute="bottom" constant="30" id="V2k-lu-cBE"/>
+                            <constraint firstItem="WDJ-29-UxF" firstAttribute="top" secondItem="ZxV-ac-Uhl" secondAttribute="bottom" constant="10" id="Zdd-iF-WWF"/>
+                            <constraint firstItem="ZxV-ac-Uhl" firstAttribute="top" secondItem="Kvx-cS-ZJa" secondAttribute="bottom" constant="10" id="fHr-Xd-21z"/>
+                            <constraint firstItem="Kvx-cS-ZJa" firstAttribute="centerX" secondItem="zED-ty-yW9" secondAttribute="centerX" id="ubf-JY-WmB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Eraser" destination="WDJ-29-UxF" id="UnB-rM-XhJ"/>
+                        <outlet property="RevealButton" destination="ZxV-ac-Uhl" id="pP9-5k-EPb"/>
+                        <outlet property="ShapeSize" destination="Kvx-cS-ZJa" id="L2m-Tp-V9N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15p-LK-wWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XWZ-Ym-7Ny" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="682"/>
+        </scene>
+        <!--Shape View Controller-->
+        <scene sceneID="qmW-Ef-ka2">
+            <objects>
+                <viewController id="P4e-Cc-VNd" customClass="ShapeViewController" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ftu-ou-yxN"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Hn-6e-oYw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aiZ-4c-I16">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5Gc-dZ-jfn">
+                                <rect key="frame" x="123" y="94" width="354" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="GqV-qA-fev"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YQ-06-Z9f">
+                                <rect key="frame" x="263" y="134" width="74" height="30"/>
+                                <state key="normal" title="Show/Hide"/>
+                                <connections>
+                                    <action selector="ShowHide:" destination="P4e-Cc-VNd" eventType="touchUpInside" id="RNS-MK-KYJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wz-bp-iHL">
+                                <rect key="frame" x="281" y="174" width="39" height="30"/>
+                                <state key="normal" title="Erase"/>
+                                <connections>
+                                    <action selector="Erase:" destination="P4e-Cc-VNd" eventType="touchUpInside" id="l7j-1A-mQ1"/>
+                                    <action selector="Erase:" destination="fdv-Nj-uCB" eventType="touchUpInside" id="rs5-X5-Ek9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Wz-bp-iHL" firstAttribute="centerX" secondItem="aiZ-4c-I16" secondAttribute="centerX" id="1zQ-Ri-pLU"/>
+                            <constraint firstItem="5Gc-dZ-jfn" firstAttribute="top" secondItem="Ftu-ou-yxN" secondAttribute="bottom" constant="30" id="587-16-Lke"/>
+                            <constraint firstItem="3YQ-06-Z9f" firstAttribute="top" secondItem="5Gc-dZ-jfn" secondAttribute="bottom" constant="10" id="5VL-f7-MLZ"/>
+                            <constraint firstItem="3YQ-06-Z9f" firstAttribute="centerX" secondItem="aiZ-4c-I16" secondAttribute="centerX" id="Nya-L3-uAn"/>
+                            <constraint firstItem="5Gc-dZ-jfn" firstAttribute="centerX" secondItem="aiZ-4c-I16" secondAttribute="centerX" id="SLf-hv-XZ2"/>
+                            <constraint firstItem="3Wz-bp-iHL" firstAttribute="top" secondItem="3YQ-06-Z9f" secondAttribute="bottom" constant="10" id="eit-tl-skS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RevealButton" destination="3Wz-bp-iHL" id="AwP-YI-mNr"/>
+                        <outlet property="ShapeSize" destination="5Gc-dZ-jfn" id="C6X-cL-CwP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mA2-Do-NHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="1383"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HPr-i3-ViJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fAI-po-fQX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2pN-7C-b9V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pgW-vL-pe5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEb-a0-XsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="311"/>
+        </scene>
+    </scenes>
+</document>

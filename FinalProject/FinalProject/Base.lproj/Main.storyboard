@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ich-KM-OwC">
+                                <rect key="frame" x="225" y="401" width="149" height="29"/>
+                                <segments>
+                                    <segment title="8x8"/>
+                                    <segment title="10x10"/>
+                                    <segment title="12x12"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchDifficulty:" destination="BYZ-38-t0r" eventType="valueChanged" id="6HU-c7-Lra"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqT-aS-EHa">
+                                <rect key="frame" x="275" y="479" width="49.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9my-kI-aoB">
+                                <rect key="frame" x="279" y="507" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmA-PJ-Opx">
+                                <rect key="frame" x="274" y="353" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NwV-Dv-r1I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Flags by clicking and holding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-lO-EON">
+                                <rect key="frame" x="166" y="444" width="266.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKB-On-Afm">
+                                <rect key="frame" x="28" y="357" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50S-Af-g6u">
+                                <rect key="frame" x="79" y="357" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nqT-aS-EHa" firstAttribute="top" secondItem="jAc-lO-EON" secondAttribute="bottom" constant="14.5" id="14O-2M-RFu"/>
+                            <constraint firstItem="EKB-On-Afm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="7cc-Bo-9UP"/>
+                            <constraint firstItem="9my-kI-aoB" firstAttribute="top" secondItem="nqT-aS-EHa" secondAttribute="bottom" constant="7.5" id="9sf-wk-0pg"/>
+                            <constraint firstItem="nqT-aS-EHa" firstAttribute="top" secondItem="ich-KM-OwC" secondAttribute="bottom" constant="50" id="Ggb-FR-HFx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nqT-aS-EHa" secondAttribute="bottom" constant="100" id="NBm-yb-kfC"/>
+                            <constraint firstItem="NmA-PJ-Opx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UfC-CS-1YU"/>
+                            <constraint firstItem="50S-Af-g6u" firstAttribute="centerY" secondItem="EKB-On-Afm" secondAttribute="centerY" id="c1g-AH-XnL"/>
+                            <constraint firstItem="ich-KM-OwC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cJY-ng-waU"/>
+                            <constraint firstItem="jAc-lO-EON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hdK-aS-Qny"/>
+                            <constraint firstItem="ich-KM-OwC" firstAttribute="top" secondItem="NmA-PJ-Opx" secondAttribute="bottom" constant="18.5" id="ltV-SL-BFI"/>
+                            <constraint firstItem="9my-kI-aoB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sJz-4G-Zpd"/>
+                            <constraint firstItem="jAc-lO-EON" firstAttribute="top" secondItem="ich-KM-OwC" secondAttribute="bottom" constant="15" id="ujR-u9-m5r"/>
+                            <constraint firstItem="nqT-aS-EHa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSA-tV-mgF"/>
+                            <constraint firstItem="NmA-PJ-Opx" firstAttribute="centerY" secondItem="EKB-On-Afm" secondAttribute="centerY" id="w8k-VU-NzA"/>
+                            <constraint firstItem="50S-Af-g6u" firstAttribute="leading" secondItem="EKB-On-Afm" secondAttribute="trailing" constant="8" id="xDh-0W-B2r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HelpLabel" destination="jAc-lO-EON" id="CjC-Pc-kUh"/>
+                        <outlet property="difficulty" destination="ich-KM-OwC" id="H6e-hZ-Zu2"/>
+                        <outlet property="score" destination="nqT-aS-EHa" id="S1F-nK-6Qk"/>
+                        <outlet property="scoreNumber" destination="9my-kI-aoB" id="1es-Tu-bF5"/>
+                        <outlet property="time" destination="50S-Af-g6u" id="PfS-QM-zGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="239"/>
+        </scene>
+    </scenes>
+</document>

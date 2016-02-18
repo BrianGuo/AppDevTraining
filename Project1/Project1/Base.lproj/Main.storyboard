@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUn-EM-vER">
+                                <rect key="frame" x="110" y="168" width="223" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i5k-Hr-1gw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWm-uZ-qp1">
+                                <rect key="frame" x="29" y="168" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfD-JF-Jnn">
+                                <rect key="frame" x="29" y="243" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sd-Xn-ndZ">
+                                <rect key="frame" x="279" y="47" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-mX-bcw">
+                                <rect key="frame" x="277" y="375" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="RevealMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aw2-nQ-Pd6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pwy-3l-88y">
+                                <rect key="frame" x="110" y="234" width="249" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cWm-uZ-qp1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8Np-ex-b9a"/>
+                            <constraint firstItem="2Sd-Xn-ndZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="8hk-oG-WHN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pwy-3l-88y" secondAttribute="trailing" constant="20" id="BzM-Us-aHd"/>
+                            <constraint firstItem="SfD-JF-Jnn" firstAttribute="trailing" secondItem="cWm-uZ-qp1" secondAttribute="trailing" id="DbQ-Se-b5T"/>
+                            <constraint firstItem="SfD-JF-Jnn" firstAttribute="top" secondItem="cWm-uZ-qp1" secondAttribute="bottom" constant="20" id="NTy-21-8g8"/>
+                            <constraint firstItem="KUn-EM-vER" firstAttribute="leading" secondItem="cWm-uZ-qp1" secondAttribute="trailing" constant="10" id="NU3-mr-Vhx"/>
+                            <constraint firstItem="xLt-mX-bcw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eP4-Dt-nRH"/>
+                            <constraint firstItem="Pwy-3l-88y" firstAttribute="leading" secondItem="SfD-JF-Jnn" secondAttribute="trailing" constant="10" id="i5C-LZ-MAP"/>
+                            <constraint firstItem="Pwy-3l-88y" firstAttribute="centerY" secondItem="SfD-JF-Jnn" secondAttribute="centerY" id="sBJ-j0-UG3"/>
+                            <constraint firstItem="KUn-EM-vER" firstAttribute="centerY" secondItem="cWm-uZ-qp1" secondAttribute="centerY" id="xoQ-aW-c8j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KUn-EM-vER" secondAttribute="trailing" constant="20" id="yk3-VW-bQP"/>
+                            <constraint firstItem="2Sd-Xn-ndZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zrz-vW-0fx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MessageButton" destination="xLt-mX-bcw" id="qiT-7c-2fP"/>
+                        <outlet property="PasswordField" destination="Pwy-3l-88y" id="xWs-FQ-QQ3"/>
+                        <outlet property="SecretMessage" destination="2Sd-Xn-ndZ" id="aFW-YQ-guP"/>
+                        <outlet property="UsernameField" destination="KUn-EM-vER" id="Xw7-vo-aaj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253" y="304"/>
+        </scene>
+    </scenes>
+</document>

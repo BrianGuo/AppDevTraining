@@ -1,0 +1,1 @@
+I did not create the TriangleView class used in this project. The code was created by user Taylor M on website http://stackoverflow.com/questions/30650343/triangle-uiview-swift .
